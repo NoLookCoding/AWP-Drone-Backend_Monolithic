@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: 기능 추가 템플릿
-title: 기능 요구사항 작성
+title: 
 labels: ''
 assignees: ''
 
