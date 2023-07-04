@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
                 userCreateDto.getPhone().matches(Regex.phoneRegex.getRegex()) &&
                 userCreateDto.getUserPassword().matches(Regex.passwordRegex.getRegex()) &&
                 userCreateDto.getEmail().matches(Regex.emailRegex.getRegex()))) {
-            throw new IllegalArgumentException();
+            return false;
         }
 
         return true;
