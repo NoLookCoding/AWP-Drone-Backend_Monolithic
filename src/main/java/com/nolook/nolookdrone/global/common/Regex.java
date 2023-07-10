@@ -10,8 +10,9 @@ public enum Regex {
     Regex(String regex) {
         this.regex = regex;
     }
-    public String getRegex() {
-        return regex;
+
+    public Boolean matchRegex(String input) {
+        return input.matches(this.regex);
     }
 
 }
